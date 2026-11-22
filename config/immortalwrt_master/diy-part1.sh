@@ -23,3 +23,15 @@ sed -i 's/^# CONFIG_PACKAGE_kmod-oaf is not set/CONFIG_PACKAGE_kmod-oaf=y/' .con
 grep -q "CONFIG_PACKAGE_luci-app-oaf=y" .config || echo "CONFIG_PACKAGE_luci-app-oaf=y" >> .config
 grep -q "CONFIG_PACKAGE_open-app-filter=y" .config || echo "CONFIG_PACKAGE_open-app-filter=y" >> .config
 grep -q "CONFIG_PACKAGE_kmod-oaf=y" .config || echo "CONFIG_PACKAGE_kmod-oaf=y" >> .config
+
+grep -q "CONFIG_PACKAGE_kmod-oaf=y" .config || echo "grep -q "CONFIG_PACKAGE_kmod-oaf=y" >> .config
+grep -q "CONFIG_PACKAGE_luci-theme-argon=y" .config || echo "grep -q "CONFIG_PACKAGE_kmod-oaf=y" >> .config
+grep -q "CONFIG_PACKAGE_luci-app-oaf=y" .config || echo "grep -q "CONFIG_PACKAGE_kmod-oaf=y" >> .config
+grep -q "CONFIG_PACKAGE_open-app-filter=y" .config || echo "grep -q "CONFIG_PACKAGE_kmod-oaf=y" >> .config
+grep -q "CONFIG_PACKAGE_kmod-oaf=y" .config || echo "grep -q "CONFIG_PACKAGE_kmod-oaf=y" >> .config
+grep -q "CONFIG_PACKAGE_kmod-ovpn-backports=y" .config || echo "grep -q "CONFIG_PACKAGE_kmod-oaf=y" >> .config
+grep -q "CONFIG_PACKAGE_luci-app-zerotier=y" .config || echo "grep -q "CONFIG_PACKAGE_kmod-oaf=y" >> .config
+grep -q "CONFIG_PACKAGE_luci-app-lucky=y" .config || echo "grep -q "CONFIG_PACKAGE_kmod-oaf=y" >> .config
+grep -q "CONFIG_PACKAGE_luci-proto-openvpn=y" .config || echo "grep -q "CONFIG_PACKAGE_kmod-oaf=y" >> .config
+grep -q "CONFIG_PACKAGE_openvpn-openssl=y" .config || echo "grep -q "CONFIG_PACKAGE_kmod-oaf=y" >> .config
+grep -q "CONFIG_PACKAGE_kmod-tun=y" .config || echo "grep -q "CONFIG_PACKAGE_kmod-oaf=y" >> .config
