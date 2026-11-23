@@ -26,7 +26,7 @@ on:
         type: choice
         options:
           - all
-          - s905_s905l3a_s905l3b_a311d-oes_s922x-oes-plus
+          - s905_s905l3a_s905l3b_a311d-oes_s922x-oes-plus_wxy-oect
           - allwinner
           - amlogic
           - rockchip
