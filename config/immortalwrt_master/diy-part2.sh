@@ -48,11 +48,9 @@ fi
 # Add luci-app-amlogic
 rm -rf package/luci-app-amlogic
 git clone -b main https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
-#
-# Apply patches
-# git apply ../config/patches/{0001*,0002*}.patch --directory=feeds/luci
-#
-# ------------------------------- Additional customizations ends -------------------------------
+
+
+
 
 # 加入 dockerd + Dockerman
 echo "CONFIG_PACKAGE_dockerd=y" >> .config
@@ -77,5 +75,8 @@ net.bridge.bridge-nf-call-iptables=0
 net.bridge.bridge-nf-call-ip6tables=0
 EOF
 
+#
 
-
+# git apply ../config/patches/{0001*,0002*}.patch --directory=feeds/luci
+#
+# ------------------------------- Additional customizations ends -------------------------------
