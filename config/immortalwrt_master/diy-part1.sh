@@ -14,20 +14,3 @@
 
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 git clone https://github.com/sirpdboy/luci-app-lucky.git package/luci-app-lucky
-
-sed -i 's/^# CONFIG_PACKAGE_luci-app-oaf is not set/CONFIG_PACKAGE_luci-app-oaf=y/' .config
-sed -i 's/^# CONFIG_PACKAGE_open-app-filter is not set/CONFIG_PACKAGE_open-app-filter=y/' .config
-sed -i 's/^# CONFIG_PACKAGE_kmod-oaf is not set/CONFIG_PACKAGE_kmod-oaf=y/' .config
-
-# 如果配置不存在则追加写入
-grep -q "CONFIG_PACKAGE_luci-app-oaf=y" .config || echo "CONFIG_PACKAGE_luci-app-oaf=y" >> .config
-grep -q "CONFIG_PACKAGE_open-app-filter=y" .config || echo "CONFIG_PACKAGE_open-app-filter=y" >> .config
-grep -q "CONFIG_PACKAGE_kmod-oaf=y" .config || echo "CONFIG_PACKAGE_kmod-oaf=y" >> .config
-
-grep -q "CONFIG_PACKAGE_luci-theme-argon=y" .config || echo "CONFIG_PACKAGE_luci-theme-argon=y" >> .config
-grep -q "CONFIG_PACKAGE_kmod-ovpn-backports=y" .config || echo "CONFIG_PACKAGE_kmod-ovpn-backports" >> .config
-grep -q "CONFIG_PACKAGE_luci-app-zerotier=y" .config || echo "CONFIG_PACKAGE_luci-app-zerotier=y" >> .config
-grep -q "CONFIG_PACKAGE_luci-app-lucky=y" .config || echo "CONFIG_PACKAGE_luci-app-lucky=y" >> .config
-grep -q "CONFIG_PACKAGE_luci-proto-openvpn=y" .config || echo "CONFIG_PACKAGE_luci-proto-openvpn=y" >> .config
-grep -q "CONFIG_PACKAGE_openvpn-openssl=y" .config || echo "CONFIG_PACKAGE_openvpn-openssl=y" >> .config
-grep -q "CONFIG_PACKAGE_kmod-tun=y" .config || echo "CONFIG_PACKAGE_kmod-tun=y" >> .config
